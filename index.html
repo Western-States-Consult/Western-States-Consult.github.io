@@ -17,7 +17,8 @@
 				<div class="top">
 					<!-- Logo -->
 						<div id="logo">
-							<span class="image avatar48"><img src="images/avatar.PNG" alt="" /></span>
+							<!-- <span class="image avatar48"><img src="images/avatar.PNG" alt="" /></span> -->
+							<span class="image avatar48"><img src="images/wsc-pic.jpg" alt="" /></span>
 							<h1 id="title">John Trent</h1>
 							<p>Citrix Architect</p>
 						</div>
@@ -68,7 +69,8 @@
 									<h2>About Me</h2>
 								</header>
 								<!-- <a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a> -->
-								<a href="#" class="image featured"><img src="https://media-exp1.licdn.com/dms/image/C5603AQHceJ5BuwYwcA/profile-displayphoto-shrink_200_200/0?e=1595462400&v=beta&t=9abVz1j9W-ae7lyntwHXJadp_PiU0oI13P78Nip0GbU" alt="John Trent" /></a>
+								<!-- <a href="#" class="image featured"><img src="https://media-exp1.licdn.com/dms/image/C5603AQHceJ5BuwYwcA/profile-displayphoto-shrink_200_200/0?e=1595462400&v=beta&t=9abVz1j9W-ae7lyntwHXJadp_PiU0oI13P78Nip0GbU" alt="John Trent" /></a> -->
+								<a href="#" class="image featured"><img src="./images/wsc-pic.jpg" alt="John Trent" /></a>
 								<p>
 									I am a virtualization architect with extensive experience in design and management of information technologies,
 									documentation specialist of systems infrastructures, project deployment specialist of software implementations,
@@ -126,7 +128,7 @@
 							<div class="row">
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-											<div id="proj-one" onclick="showModal1()">
+											<div id="proj-one" onclick="showModal1('one')">
 												<img id="proj-image-one" class="image fit" src="images/pic.jpg" alt="" style="cursor:pointer;">
 											</div>
 											<div id="modal-one" class="modal">
@@ -234,6 +236,18 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+<!-- modal 1 -->
+			<script>
+			function showModal1(proj) {
+				var proj_num = proj;
+				if (proj_num = 'one') {
+					var modal = document.getElementById("modal-one");
+					var btn = document.getElementById("proj-image-one");
+					var span = document.getElementsByClassName("close1")[0];
+				}
+			}
+			</script>
 
 <!-- modal 1 -->
 			<script>
