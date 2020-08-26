@@ -1053,7 +1053,7 @@ input, select, textarea {
   content: " ";
   height: 0;
   position: absolute;
-  top: 22px;
+  top: 17px;
   width: 0;
   z-index: 1;
   right: 30px;
@@ -1067,7 +1067,7 @@ input, select, textarea {
   content: " ";
   height: 0;
   position: absolute;
-  top: 22px;
+  top: 17px;
   width: 0;
   z-index: 1;
   left: 30px;
@@ -1091,6 +1091,16 @@ input, select, textarea {
   background-color: white;
   position: relative;
   border-radius: 6px;
+}
+
+/* Box shadows for left content */
+.c-left {
+	box-shadow: 5px 10px 8px #888888;
+}
+
+/* Box shadows for right content */
+.c-right {
+	box-shadow: -5px 10px 8px #888888;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
@@ -1125,4 +1135,13 @@ input, select, textarea {
   .right {
   left: 0%;
   }
+
+/* Make all content have the same box shadow */
+ .c-left {
+ 	box-shadow: -5px 10px 8px #888888;
+ }
+/* Make all content have the same box shadow */
+ .c-right {
+ 	box-shadow: -5px 10px 8px #888888;
+ }
 }
